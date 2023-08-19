@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c on Mako&#39;s Blog</title>
+    <link>/tags/c/</link>
+    <description>Recent content in c on Mako&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Aug 2023 21:42:40 -0400</lastBuildDate><atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My first post!</title>
+      <link>/posts/first-post/</link>
+      <pubDate>Fri, 18 Aug 2023 21:42:40 -0400</pubDate>
+      
+      <guid>/posts/first-post/</guid>
+      <description>Hello! My name is Masao but I pefer to be called as &amp;ldquo;Mako&amp;rdquo; ^^, and welcome to my blog!
+And Why I created this? The goal of this blog is to archive my projects&amp;rsquo;s development process. This is a fun way to me to keep on track of my journey as a developer.
+How&amp;rsquo;d I got into this? Since my 14&amp;rsquo;s I got into programming through a techincal course on high school.</description>
+      <content>&lt;p&gt;Hello! My name is Masao but I pefer to be called as &amp;ldquo;Mako&amp;rdquo; ^^, and welcome to my blog!&lt;/p&gt;
+&lt;h3 id=&#34;and-why-i-created-this&#34;&gt;And Why I created this?&lt;/h3&gt;
+&lt;p&gt;The goal of this blog is to archive my projects&amp;rsquo;s development process. This is a fun way to me to keep on track of my journey as a developer.&lt;/p&gt;
+&lt;h3 id=&#34;howd-i-got-into-this&#34;&gt;How&amp;rsquo;d I got into this?&lt;/h3&gt;
+&lt;p&gt;Since my 14&amp;rsquo;s I got into programming through a techincal course on high school. I got started with Portugol (for those who aren&amp;rsquo;t Brazilian, is a pseudo-code written in Portuguese).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Algoritmo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;var 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Inicio
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;escreval&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello World&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;//This is a portugol (VisualAlg) program.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;FinalAlgoritmo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I really enjoyed messing up with that 😅 after that I delved into C#:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//WHAT IS THIS????&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; System;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//CLASS? CLASS WHO????? &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Program&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//WHO IS VOID I&amp;#39;M BRASILEIRA NAO CAN&amp;#39;T READ!!!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; Main()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;//WHO IS CONSOLE? PLAYSTATION????&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Abandon all hope when enter here, Portugol Developer!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And I was like 👀👀👀 WTF!!??? Personally I would have perferred to start with C before all that &lt;strong&gt;(EVEN I DIDN&amp;rsquo;T KNEW A THING ABOUT THAT ONE TOO)&lt;/strong&gt;, lmao! Well, following that, I studyied Java and I learned a lot about OOP making simple projects, and learned things about MYSQL too (Hybernate said hello).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Okay.... Class is a sort of Object model... Right?
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;HelloWorld&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//Public is... how external objects access things... 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;//This is how you call OS instruction... right?
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At the end of course &amp;hellip; Anyways, I got into Golang as a initiative to learn by myself some programming concepts, I made a very crappy bot and it was go through after countless updates, rewritting, and it was a project that I even got a help with a skilled friend.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/imagem-1.png&#34; alt=&#34;&amp;ldquo;Placeholder image&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Besides that project, I got into game development early too. My first game engine I&amp;rsquo;ve worked on and making silly projects was Game Maker &lt;strong&gt;Lite&lt;/strong&gt;, yeah. And I coded something? Nah, I just stuffed a bunch of events and made the most atrocious thing that was ever made, and sadly I don&amp;rsquo;t have the project&amp;hellip; Because it was hilarious.&lt;/p&gt;
+&lt;p&gt;Subsequently, I started to using RPG Maker VX Ace, I did a lot of cringy stuff and I&amp;rsquo;ll elaborate any futher. But I got the first grasp of OOP, even not knowing much about Ruby and it&amp;rsquo;s scripting language (RGSS).&lt;/p&gt;
+&lt;p&gt;Everything went cold about game development until 2017~2018, the year that I discovered Godot&amp;hellip;&lt;/p&gt;
+&lt;p&gt;[Picture about godot]&lt;/p&gt;
+&lt;p&gt;In the meantime, I studied pixel art. While digging around, I stumbled upon a Reimu artwork:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.discordapp.com/attachments/231829187776741377/518874607563046914/Captura_de_tela_de_2018-12-02_16.42.04.png&#34; alt=&#34;&amp;ldquo;Leimu :D&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And some animation:
+&lt;img src=&#34;/idle-3.gif&#34; alt=&#34;&amp;quot;&amp;quot;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;About the time studying a lot of GDscript and Pixel art, I finally made a project that was made with my very own art 😊&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/imagem-3.png&#34; alt=&#34;&amp;ldquo;Late Stage Game&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sadly I don&amp;rsquo;t have any other images&amp;hellip; But I think I can find the whole project file, eventually I&amp;rsquo;ll write about this project in particular, because it reached a very interesting maturing process.&lt;/p&gt;
+&lt;h2 id=&#34;and-what-now&#34;&gt;And what now?&lt;/h2&gt;
+&lt;p&gt;Of course I&amp;rsquo;ve skipped a lot of projects, ideas and I just gave a brief introduction of myself. And I had going trought a lot a things, nowadays, I got a really liking into C/C++, yeah, I&amp;rsquo;m not saying that I became a huge fan of low level programming, but C really captivated me, the fact there&amp;rsquo;s a old ass programming language that is still used util this day, have a high performance and a lot of control.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m aiming to make simple games/tech demos using the &lt;a href=&#34;https://www.libsdl.org/&#34;&gt;Simple DirectMedia Layer&lt;/a&gt;, and documenting the whole process. The reason behind that is because I really liked using some frameworks like &lt;a href=&#34;https://love2d.org/&#34;&gt;Love2D&lt;/a&gt;, &lt;a href=&#34;https://www.pygame.org/news&#34;&gt;Pygame&lt;/a&gt;, etc. And I really want to know more about the whole engineiring the game development process.&lt;/p&gt;
+&lt;p&gt;Some about some grammar crimes I might commited here&amp;hellip; English is not my native language so this blog is also a way to improve my english writting as well XD.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
