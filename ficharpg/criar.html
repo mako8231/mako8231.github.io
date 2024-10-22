@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Chara Calc</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./criar.html">Criar Personagem</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <div class="container" id="idCode">
+        <h4>Como o sistema realiza os cálculos?</h4>
+        <p>O sistema calcula pontos de vida e valores de algumas perícias com base nos atributos do seu persongem</p>
+        <pre>
+          Discurso (%) = (Inteligencia + Carisma)/10
+          Combate (%) = (Constituição + Força + Destreza)/15
+          Manobras (%) = (Força + Destreza) / 10
+          Pontos de Vida (PV) = Constituição + 20
+
+        </pre>
+      </div>
+
+     <div class="container" id="formCalc">
+        <form id="formCharaCalc">
+            <div class="mb-3">
+              <label for="txtNomeJogador" class="form-label">Nome do Jogador</label>
+              <input type="text" class="form-control" id="txtNomeJogador">
+              <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+            </div>
+            <div class="mb-3">
+              <label for="txtNomePersonagem" class="form-label">Nome do Personagem</label>
+              <input type="text" class="form-control" id="txtNomePersonagem">
+            </div>
+            <div class="mb-3">
+                <h4>Criação de Personagem:</h4>
+                <div class="alert alert-warning" role="alert">
+                    Os valores dos atributos somados não podem passar de <b>20 pontos!</b><br>
+                    E não podem ser inferiores a <b>7 pontos!</b>
+                </div>
+            </div>
+            <!--Constituição-->
+            <div class="mb-3">
+              <label for="selectConst" class="form-label">Constituição</label>
+              <select id="selectConst" class="form-select">
+                <option>Selecione um valor</option>
+                <option>-1</option>
+                <option>+0</option>
+                <option>+1</option>
+                <option>+2</option>
+                <option>+3</option>
+                <option>+4</option>
+                <option>+5</option>
+              </select>
+            </div>
+
+            <!--Inteligencia-->
+            <div class="mb-3">
+                <label for="selectInt" class="form-label">Inteligencia</label>
+                <select id="selectInt" class="form-select">
+                  <option>Selecione um valor</option>
+                  <option>-1</option>
+                  <option>+0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+
+            <!--Força-->
+            <div class="mb-3">
+                <label for="selectFor" class="form-label">Força</label>
+                <select id="selectFor" class="form-select">
+                  <option>Selecione um valor</option>
+                  <option>-1</option>
+                  <option>+0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+
+            <!--Força-->
+            <div class="mb-3">
+                <label for="selectDex" class="form-label">Destreza</label>
+                <select id="selectDex" class="form-select">
+                  <option>Selecione um valor</option>
+                  <option>-1</option>
+                  <option>+0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+
+            <!--Carisma-->
+            <div class="mb-3">
+                <label for="selectCha" class="form-label">Carisma</label>
+                <select id="selectCha" class="form-select">
+                  <option>Selecione um valor</option>
+                  <option>-1</option>
+                  <option>+0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+
+            <!--Dedução-->
+            <div class="mb-3">
+                <label for="selectDedu" class="form-label">Dedução</label>
+                <select id="selectDedu" class="form-select">
+                  <option>Selecione um valor</option>
+                  <option>-1</option>
+                  <option>+0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>        
+                                 
+          </form>
+          <button id="btnCalc" class="btn btn-primary">Calcular</button>  
+          <div id="containerError" class="alert alert-danger" role="alert">
+            <p id="txtError">Mensagem de erro aqui</p>
+        </div>
+     </div>
+     <br>
+     <div class="container"  id="viewCharData" >
+      <h3 id="txtTituloCalc" style="text-align: center;">Resultados do Personagem</h3>
+      
+      <h4>Atributos Base:</h4>
+      <p id="calcNomeJogador"><b>Nome do Jogador:</b> X </p>
+      <p id="calcNomePersonagem"><b>Nome do Personagem:</b> X </p>
+      <p id="calcConstituicao"><b>Constituição:</b> X </p>
+      <p id="calcInteligencia"><b>Inteligencia:</b> X </p>
+      <p id="calcForca"><b>Força:</b> X </p>
+      <p id="calcDestreza"><b>Destreza:</b> X </p>
+      <p id="calcCarisma"><b>Carisma:</b> X </p>
+      <p id="calcDeducao"><b>Dedução:</b> X </p>
+      <br>
+      <h4>Perícias e Pontos de Vida:</h4>
+      <p id="calcDiscurso"><b>Discurso (Probabilidade de Sucesso %): </b>X%</p>
+      <p id="calcCombate"><b>Combate (Probabilidade de Sucesso %): </b>X%</p>
+      <p id="calcManobra"><b>Manobras (Probabilidade de Sucesso %): </b>X%</p>
+      <p id="calcPV"><b>Pontos de Vida (PV): </b>X</p>
+
+     </div>
+     
+     <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2024 Masao Muraoka, <a href="https://github.com/mako8231" target="_blank">meu github</a></span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+     
+    <script src="jquery/jquery-3.7.1.min.js">
+
+    </script> 
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#containerError').hide()
+        let charaCalcData = {}
+        $("#viewCharData").hide()
+        console.log("jquery funcionando :)")
+        $('#btnCalc').click(function(){
+          
+          let formView = getFieldValues()
+          let error = validarForm(formView)
+
+          if (!error.hasError) {
+            $('#containerError').hide()
+            charaCalcData = charaCalc(formView)
+            console.log("chegou aqui?", characterDataView)
+            characterDataView(charaCalcData)
+          } else {
+            var text = $('#txtError').text(`${ error.errorMessage }`)
+            text.html(text.html().replace(/\n/g,'<br/>'))
+            $('#containerError').show()
+            
+            
+            console.log(error.errorMessage)
+          }
+        })
+      })
+
+      function getFieldValues(){
+        let baseForm = {
+          'txtNomeJogador':null, 
+          'txtNomePersonagem':null, 
+          'selectConst':null, 
+          'selectInt':null, 
+          'selectFor':null, 
+          'selectDex':null, 
+          'selectCha':null, 
+          'selectDedu':null
+        }
+        let fieldValues = ['txtNomeJogador', 'txtNomePersonagem', 'selectConst', 'selectInt', 'selectFor', 'selectDex', 'selectCha', 'selectDedu']
+        
+        for (let i = 0; i<fieldValues.length; i++){
+          baseForm[fieldValues[i]] = $(`#${fieldValues[i]}`).val()
+        }
+
+        return baseForm
+      }
+
+      function validarForm(baseForm){
+        console.log(baseForm)
+        let sumAttributes = 0;
+        //limite inferior 
+        const inflimAttributes = 7
+        //limite superior
+        const limAttributes = 20;
+        const fieldErrors = {
+          'txtNomeJogador':'Insira o nome do Jogador\n', 
+          'txtNomePersonagem':'Insira o nome do Personagem\n', 
+          'selectConst':'Insira valores válidos para Constituição\n', 
+          'selectInt':'Insira valores válidos para Inteligencia\n', 
+          'selectFor':'Insira valores válidos para Força\n', 
+          'selectDex':'Insira valores válidos para Destreza\n', 
+          'selectCha':'Insira valores válidos para Carisma\n', 
+          'selectDedu':'Insira valores válidos para Dedução\n'
+        }
+        let errorData = {'hasError': false, 'errorMessage': ''}
+        if (baseForm['txtNomeJogador'] == '' || baseForm['txtNomeJogador'] == null) {
+          errorData['hasError'] = true 
+          errorData['errorMessage'] += fieldErrors['txtNomeJogador']
+        }
+        if (baseForm['txtNomePersonagem'] == '' || baseForm['txtNomePersonagem'] == null) {
+          errorData['hasError'] = true 
+          errorData['errorMessage'] += fieldErrors['txtNomePersonagem']
+        }
+
+        let selectValues = ['selectConst', 'selectInt', 'selectFor', 'selectDex', 'selectCha', 'selectDedu']
+        for (let i = 0; i<selectValues.length; i++){
+          if (baseForm[selectValues[i]] == "" || baseForm[selectValues[i]] ==  "Selecione um valor"){
+            errorData['hasError'] = true 
+            errorData['errorMessage'] += fieldErrors[selectValues[i]]
+          } else {
+            let txtValue = baseForm[selectValues[i]]
+            let numericalValField = 'num_'+selectValues[i]
+            switch (txtValue){
+              case '-1':
+                baseForm[numericalValField] = -1
+                sumAttributes += -1
+                break
+              case '+0':
+              baseForm[numericalValField] = 0
+                sumAttributes += 0
+                break
+              case '+1':
+                baseForm[numericalValField] = 1
+                sumAttributes += 1
+                break
+              case '+2':
+                baseForm[numericalValField] = 2
+                sumAttributes += 2
+                break
+              case '+3':
+                baseForm[numericalValField] = 3
+                sumAttributes += 3
+                break
+              case '+4':
+                baseForm[numericalValField] = 4
+                sumAttributes += 4
+                break
+              case '+5':
+                baseForm[numericalValField] = 5
+                sumAttributes += 5
+                break 
+            }
+             
+          }
+
+            
+        }
+        if (sumAttributes < inflimAttributes){
+              errorData['hasError'] = true 
+              errorData['errorMessage'] += 'Valores de atributos muito baixos\n'
+            } else if (sumAttributes > limAttributes){
+              errorData['hasError'] = true 
+              errorData['errorMessage'] += 'Valores de atributos ultrapassados\n'
+        }
+        return errorData
+      }
+
+      function charaCalc(validatedForm){
+        let characterData = {
+          ocName : null,
+          playerName : null,
+          constituicao: null,
+          inteligencia : null,
+          forca: null,
+          destreza: null,
+          carisma: null, 
+          deducao: null,
+          discurso: null,
+          combate: null,
+          manobras: null,
+          pontosVida: null
+        }
+
+        characterData.ocName = validatedForm['txtNomePersonagem']
+        characterData.playerName = validatedForm['txtNomeJogador']
+        characterData.constituicao = validatedForm['num_selectConst']
+        characterData.inteligencia = validatedForm['num_selectInt']
+        characterData.forca = validatedForm['num_selectFor']
+        characterData.destreza = validatedForm['num_selectDex']
+        characterData.carisma = validatedForm['num_selectCha']
+        characterData.deducao = validatedForm['num_selectDedu']
+
+        characterData.combate = (characterData.constituicao + characterData.forca + characterData.destreza) / 15
+        characterData.discurso = (characterData.inteligencia + characterData.carisma) / 10
+        characterData.manobras = (characterData.forca + characterData.destreza) / 10
+        characterData.pontosVida = (characterData.constituicao + 20)
+
+        return characterData
+      }
+
+      function characterDataView(characterData){
+        /**<p id="calcNomeJogador"><b>Nome do Jogador:</b> X </p>
+        <p id="calcNomePersonagem"><b>Nome do Personagem:</b> X </p>
+        <p id="calcConstituicao"><b>Constituição:</b> X </p>
+        <p id="calcInteligencia"><b>Inteligencia:</b> X </p>
+        <p id="calcForca"><b>Força:</b> X </p>
+        <p id="calcDestreza"><b>Destreza:</b> X </p>
+        <p id="calcCarisma"><b>Carisma:</b> X </p>
+        <p id="calcDeducao"><b>Dedução:</b> X </p>
+
+        <p id="calcDiscurso"><b>Discurso (Probabilidade de Sucesso %): </b>X%</p>
+        <p id="calcCombate"><b>Combate (Probabilidade de Sucesso %): </b>X%</p>
+        <p id="calcManobra"><b>Manobras (Probabilidade de Sucesso %): </b>X%</p>
+        <p id="calcPV"><b>Pontos de Vida (PV): </b>X</p>**/
+        $('#calcNomePersonagem').html(`<b>Nome do Personagem:</b> ${characterData.ocName}`)
+        $('#calcNomeJogador').html(`<b>Nome do Jogador:</b> ${characterData.playerName}`)
+        $('#calcConstituicao').html(`<b>Constituição:</b> ${characterData.constituicao}`)
+        $('#calcInteligencia').html(`<b>Inteligencia:</b> ${characterData.inteligencia}`)
+        $('#calcForca').html(`<b>Força:</b> ${characterData.forca}`)
+        $('#calcDestreza').html(`<b>Destreza:</b> ${characterData.destreza}`)
+        $('#calcCarisma').html(`<b>Carisma:</b> ${characterData.carisma}`)
+        $('#calcDeducao').html(`<b>Dedução:</b> ${characterData.deducao} `)
+
+        $('#calcDiscurso').html(`<b>Discurso (Probabilidade de Sucesso %): </b>${(characterData.discurso * 100).toFixed(2)}%`)
+        $('#calcCombate').html(`<b>Combate (Probabilidade de Sucesso %): </b>${(characterData.combate * 100).toFixed(2)}%`)
+        $('#calcManobra').html(`<b>Manobras (Probabilidade de Sucesso %): </b>${(characterData.manobras * 100).toFixed(2)}%`)
+        $('#calcPV').html(`<b>Pontos de Vida (PV): </b>${(characterData.pontosVida)}</p>`)
+        
+        $('#viewCharData').show()
+
+      }
+
+    </script>
+</body>
+</html>
